@@ -55,7 +55,7 @@ a:focus {
 .line {
     width: 100%;
     height: 1px;
-    border-bottom: 1px dashed #ddd;
+    border-bottom: 2px dashed #ddd;
     margin: 40px 0;
 }
 
@@ -120,6 +120,14 @@ ul ul a {
 
 .sidebar-content {
     text-align: center;
+}
+
+.sidebar-logo-link {
+    margin: 10px;
+}
+
+.h3-head {
+    padding: 10px;
 }
 
 /* Content */
