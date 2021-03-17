@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jónas Helgi Vefsíða</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="img/JonasFerilskramynd.jpg" alt="JonasHelgi">
+            </div>
+            <ul class="list-unstyled components">
+                <h3>Velkomin!</h3>
+                <li>
+                    <a href="#inngangur">Inngangur</a>
+                </li>
+                <li>
+                    <a href="#verkefni">Verkefni</a>
+                </li>
+                <li>
+                    <a href="#umMig">Um mig</a>
+                </li>
+                <li>
+                    <a href="#ferilskra">Ferilskrá</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Texti -->
+        <div id="content">
+
+            <h2 id="inngangur">Ég heiti Jónas Helgi</h2>
+            <p>
+                Ég er að ljúka við annað árið mitt í tölvunarfræði við
+                Háskóla Íslands. Áreiðanleiki, vinnusemi, sjálfstæði og nákvæmni fyrirfinnst
+                í öllum mínum störfum.
+            </p>
+            <p>Lorem ipsum dolor sit elit esse  anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h2 id="verkefni">Persónuleg verkefni</h2>
+            <p>derit icat cupidatat non proident,lit anim id est laborum.</p>
+            <div class="row">
+                <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action lgi active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Veður Verkefnið</a>
+                        <a class="list-group-item list-group-item-action lgi" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                        <a class="list-group-item list-group-item-action lgi" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                        <a class="list-group-item list-group-item-action lgi" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            Ég var forvitin hvort hægt væri að spá fyrir veðri ef maður væri með 20 ár af upplýsingum um veður.
+                            <form
+                                action="https://github.com/IceJonas/RGB-bot" target="_blank">
+                                <input type="submit" value="Ýttu hér til að fara á Github síðuna" />
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                            Lorem ipsum dolor sit elit esse anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                            Lorem ipsum dolor sit elit esse anim id est laborum.
+                        </div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                            Lorem ipsum dolor sit elit esse anim id est laborum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+
+            <h2 id="umMig">Um mig</h2>
+            <p>Lorem ipsum dolor sit amet, consecat cupulpa queserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3 id="ferilskra">Ferilskrá</h3>
+            <p>Hægt er að sjá ferilskránna mína með því að ýta á takkan hér að neðan og þá opnast pdf skjal.</p>
+            <form
+                action="img/Ferilskra_JonasHelgi.pdf" target="_blank">
+                <input type="submit" value="Jónas Helgi Ferilskrá" />
+            </form>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#sidebarCollapse').on('click', function() {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
