@@ -126,16 +126,16 @@ ul ul a {
     margin: 10px;
 }
 
-.h3-head {
-    padding: 10px;
-}
-
 /* Content */
 #content {
     width: 100%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+}
+
+.card-namskeid {
+    margin-bottom: 20px;
 }
 
 /* Verkefni, breyta grunn bootstrap stýlnum */
