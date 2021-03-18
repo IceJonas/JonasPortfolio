@@ -1,2 +1,4 @@
 # JonasPortfolio
-Jónas Helgi Vefsíða
+Jónas Helgi Vefsíða/Portfolio
+
+<br> https://icejonas.github.io/JonasPortfolio/
