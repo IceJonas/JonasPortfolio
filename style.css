@@ -1,169 +1,151 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
 /* #105955 */
+
 /* #136b66 */
+
 :root {
-    --green: #136b66;
-    --lightgreen: #2b8782;
+	--green: #136b66;
+	--lightgreen: #2b8782;
+	--background: #fafafa;
 }
-
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+	font-family: "Lucida Console", "Courier New", monospace;
+	background: var(--background);
 }
-
 p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
+	font-family: "Lucida Console", "Courier New", monospace;
+	font-size: 1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
 }
+/* TEST */
+
+/* Images */
 
 .img-head {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 50%;
-    border: 5px solid var(--lightgreen);
+	max-width: 90%;
+	max-height: 90%;
+	border-radius: 50%;
+	border: 5px solid var(--lightgreen);
 }
-
 .img-about {
-    max-width: 75%;
-    max-height: 75%;
-    border-radius: 1%;
+	max-width: 75%;
+	max-height: 75%;
+	border-radius: 1%;
 }
-
 .img-about-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
-
 .jumbotron {
-    background-color: var(--green);
-    color: white;
-    border: 5px solid var(--lightgreen);
+	text-align: center;
+	background-color: var(--background);
 }
-
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
+a, a:hover, a:focus {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s;
 }
-
 .line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 2px dashed #ddd;
-    margin: 40px 0;
+	width: 100%;
+	height: 1px;
+	border-bottom: 2px dashed #ddd;
+	margin: 40px 0;
 }
-
 /* Sidebar */
+
 .wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
 }
-
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: var(--green);
-    color: #fff;
-    transition: all 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: 5px solid var(--lightgreen);
+	min-width: 250px;
+	max-width: 250px;
+	background: var(--green);
+	color: #fff;
+	transition: all 0.3s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-right: 5px solid var(--lightgreen);
 }
-
 #sidebar.active {
-    margin-left: -250px;
+	margin-left: -250px;
 }
-
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: var(--green);
+	padding: 20px;
+	background: var(--green);
 }
-
 #sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid var(--green);
+	padding: 20px 0;
+	border-bottom: 1px solid var(--green);
 }
-
 #sidebar ul p {
-    color: #fff;
-    padding: 10px;
+	color: #fff;
+	padding: 10px;
 }
-
 #sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
 }
-
 #sidebar ul {
-    position: fixed;
+	position: fixed;
 }
-
 #sidebar ul li a:hover {
-    color: #fff;
-    background: var(--lightgreen);
+	color: #fff;
+	background: var(--lightgreen);
 }
-
 ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
+	font-size: 0.9em !important;
+	padding-left: 30px !important;
+	background: #6d7fcc;
 }
-
 .sidebar-content {
-    text-align: center;
+	text-align: center;
 }
-
 .sidebar-logo-link {
-    margin: 10px;
+	margin: 10px;
 }
-
 /* Content */
+
 #content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
+	width: 100%;
+	padding: 20px;
+	min-height: 100vh;
+	transition: all 0.3s;
 }
-
 .card-namskeid {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
-
+.umMig-content {
+	border: none;
+	background-color: var(--background);
+}
 /* Verkefni, breyta grunn bootstrap stýlnum */
+
 .verk-btn {
-    background-color: var(--green);
-    border-color: var(--lightgreen);
+	background-color: var(--green);
+	border-color: var(--lightgreen);
 }
-
 .verk-btn:hover {
-    background-color: var(--lightgreen);
-    border-color: var(--green);
+	background-color: var(--lightgreen);
+	border-color: var(--green);
 }
-
 .bottom {
-    padding-bottom: 80px;
+	padding-bottom: 80px;
 }
-
 /* Týpíska mediaquerry til að skjárinn verði minni */
+
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-
-    #sidebar.active {
-        margin-left: 0;
-    }
-
-    #sidebarCollapse span {
-        display: none;
-    }
+	#sidebar {
+		margin-left: -250px;
+	}
+	#sidebar.active {
+		margin-left: 0;
+	}
+	#sidebarCollapse span {
+		display: none;
+	}
 }
